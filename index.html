@@ -510,26 +510,6 @@
         make("text", { class: "rm-tick", x: plot.x - 9, y: y + 4, "text-anchor": "end" }, gridLayer, fmt(tick));
       });
 
-      for (var xp = 5; xp <= 7; xp += 1) {
-        for (var xm = 2; xm < 10; xm += 1) {
-          var xv = xm * Math.pow(10, xp);
-          if (xv > xMin && xv < xMax) {
-            var gx = xScale(xv);
-            make("line", { class: "rm-grid", x1: gx, y1: plot.y, x2: gx, y2: plot.y + plot.h }, gridLayer);
-          }
-        }
-      }
-
-      for (var yp = 4; yp <= 5; yp += 1) {
-        for (var ym = 2; ym < 10; ym += 1) {
-          var yv = ym * Math.pow(10, yp);
-          if (yv > yMin && yv < yMax) {
-            var gy = yScale(yv);
-            make("line", { class: "rm-grid", x1: plot.x, y1: gy, x2: plot.x + plot.w, y2: gy }, gridLayer);
-          }
-        }
-      }
-
       make("text", { class: "rm-axis-title", x: plot.x + plot.w / 2, y: H - 14, "text-anchor": "middle" }, gridLayer, "\u5e73\u5747\u64ad\u653e\u91cf\uff08\u5bf9\u6570\u5c3a\u5ea6\uff09");
       make("text", {
         class: "rm-axis-title",
