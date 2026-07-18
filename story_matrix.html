@@ -6,33 +6,33 @@
   <title>ReelShort Top 200 短剧故事马赛克</title>
   <style>
     :root {
-      --background:#f2efec; --foreground:#161315; --muted:#777074;
-      --panel:rgba(255,255,255,.88); --border:rgba(32,20,25,.11);
+      --background:transparent; --foreground:#161315; --muted:#777074;
+      --panel:transparent; --border:rgba(32,20,25,.11);
       --black:#0b090a; --pink:#ff165d; --red:#ef174b; --orange:#ff6a24;
       --brand-gradient:linear-gradient(135deg,var(--pink),var(--red) 55%,var(--orange));
       color-scheme:light;
     }
     *{box-sizing:border-box}
-    html{min-width:320px;background:var(--background)}
-    body{margin:0;color:var(--foreground);background:radial-gradient(circle at 85% 2%,rgba(255,22,93,.1),transparent 25rem),var(--background);font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+    html{min-width:320px;background:transparent!important}
+    body{margin:0;color:var(--foreground);background:transparent!important;font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif}
     button,input,select{font:inherit} button{-webkit-tap-highlight-color:transparent}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .page-shell{width:min(1180px,calc(100% - 24px));margin:0 auto;padding:12px 0 24px}
-    .tool-panel{display:grid;grid-template-columns:minmax(260px,1fr) 200px auto;align-items:center;gap:8px;margin-bottom:10px;padding:8px;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,.7);backdrop-filter:blur(14px)}
-    .search-control{height:38px;display:flex;align-items:center;gap:10px;padding:0 11px;border:1px solid var(--border);border-radius:9px;background:#fff}
+    .tool-panel{display:grid;grid-template-columns:minmax(260px,1fr) 200px auto;align-items:center;gap:8px;margin-bottom:10px;padding:8px;border:1px solid var(--border);border-radius:14px;background:transparent}
+    .search-control{height:38px;display:flex;align-items:center;gap:10px;padding:0 11px;border:1px solid var(--border);border-radius:9px;background:transparent}
     .search-control input{width:100%;min-width:0;border:0;outline:0;color:var(--foreground);background:transparent;font-size:12px}
     .search-control input::placeholder{color:#aaa4a7}.search-control button{padding:0;border:0;color:#8f888b;background:transparent;font-size:20px;cursor:pointer}
     .search-symbol{width:13px;height:13px;position:relative;flex:none;border:1.5px solid #8d8589;border-radius:50%}
     .search-symbol:after{content:"";width:5px;height:1.5px;position:absolute;right:-4px;bottom:-2px;background:#8d8589;transform:rotate(45deg)}
-    .select-control{height:38px;display:flex;align-items:center;gap:8px;padding:0 10px;border:1px solid var(--border);border-radius:9px;background:#fff}
+    .select-control{height:38px;display:flex;align-items:center;gap:8px;padding:0 10px;border:1px solid var(--border);border-radius:9px;background:transparent}
     .select-control>span,.sort-control>span{color:#8d8589;font-size:9px;white-space:nowrap}
     .select-control select{width:100%;min-width:0;border:0;outline:0;color:#393436;background:transparent;font-size:11px;cursor:pointer}
     .sort-control{display:flex;align-items:center;gap:4px}.sort-control>span{margin:0 3px}
-    .sort-control button{height:30px;padding:0 9px;border:1px solid var(--border);border-radius:8px;color:#6f696c;background:#fff;font-size:10px;cursor:pointer}
+    .sort-control button{height:30px;padding:0 9px;border:1px solid var(--border);border-radius:8px;color:#6f696c;background:transparent;font-size:10px;cursor:pointer}
     .sort-control button:hover{color:var(--foreground);border-color:rgba(239,23,75,.32)}
     .sort-control button.is-active{color:#fff;border-color:transparent;background:var(--black)}
-    .mosaic-card{position:relative;padding:12px;border:1px solid var(--border);border-radius:18px;background:var(--panel);box-shadow:0 18px 48px rgba(39,22,28,.08)}
-    .case-summary{min-height:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 15px;margin-bottom:10px;padding:10px 12px;border:1px solid rgba(239,23,75,.11);border-radius:12px;background:linear-gradient(100deg,rgba(255,22,93,.07),rgba(255,255,255,.74) 40%)}
+    .mosaic-card{position:relative;padding:12px;border:1px solid var(--border);border-radius:18px;background:transparent;box-shadow:none}
+    .case-summary{min-height:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 15px;margin-bottom:10px;padding:10px 12px;border:1px solid rgba(239,23,75,.11);border-radius:12px;background:transparent}
     .summary-count{color:var(--red);font:750 10px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;white-space:nowrap}
     .summary-title{min-width:160px;flex:1 1 340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
     .summary-meta{color:#898285;font-size:10px;white-space:nowrap}
